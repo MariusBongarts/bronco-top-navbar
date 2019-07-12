@@ -47,6 +47,7 @@ Modern Top circular navbar built with Lit-Element
 | `--position`      | Positioning of navBar. Default: fixed            |
 | `--primary-color` | Change primary color easily                      |
 | `--width`         | Navbar width. Default: 100vw                     |
+| `--z-index`       | Default: 2                                       |
 
 
 

@@ -11,6 +11,7 @@ const componentCSS = require('./app.component.scss');
  * @cssprop --position - Positioning of navBar. Default: fixed
  * @cssprop --primary-color - Change primary color easily
  * @cssprop --width - Navbar width. Default: 100vw
+ * @cssprop --z-index - Default: 2
  */
 @customElement('bronco-top-navbar')
 export class BroncoTopNavbar extends LitElement {

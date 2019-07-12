@@ -5,6 +5,7 @@
   --position: fixed;
   --primary-color: rgb(29, 202, 255);
   --width: 100vw;
+  --z-index: 2;
 }
 
 #topBar {
@@ -13,7 +14,7 @@
   position: var(--position);
   width: var(--width);
   height: var(--height);
-  z-index: 9999;
+  z-index: var(--z-index);
 }
 
 .navbar {
