@@ -1,0 +1,80 @@
+:host {
+  --bg-color: #000;
+  --color: white;
+  --height: 3em;
+  --position: fixed;
+  --primary-color: rgb(29, 202, 255);
+  --width: 100vw;
+}
+
+#topBar {
+  left: 0;
+  top: 0;
+  position: var(--position);
+  width: var(--width);
+  height: var(--height);
+  z-index: 9999;
+}
+
+.navbar {
+  background: var(--bg-color);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+   background: var(--bg-color);
+  }
+
+  li {
+    background: var(--bg-color);
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: var(--color);
+    cursor: pointer;
+    text-align: center;
+  }
+
+  li:hover:not(#leftHeader):not(#rightHeader) {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  .active {
+    color: var(--primary-color);
+    transform: translate(0, 0.2em);
+  }
+}
+
+#leftHeader {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 150%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#rightHeader {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.hideBar {
+  transition: opacity 0.5s linear;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
