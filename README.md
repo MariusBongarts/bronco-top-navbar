@@ -24,7 +24,7 @@ Modern Top circular navbar built with Lit-Element
 | `hideOnMobile`    | `boolean`     | false         | Makes the navbar disappear on mobile devices     |
 | `hideOnScrolling` | `boolean`     | true          | Makes the navbar disappear, when user is scrolling |
 | `isScrolling`     | `boolean`     | **required**  |                                                  |
-| `mobile`          | `boolean`     | false         | If true, either navbar is completely hidden, when hideOnMobile = true or<br />only leftHeader and rightHeader are shown |
+| `mobile`          | `boolean`     | false         | If true, either navbar is completely hidden, when hideOnMobile = true or only leftHeader and rightHeader are shown |
 | `navItems`        | `string[]`    |               | Takes an array to set (minimum: 3, maximum 5) nav items, of this component |
 | `open`            | `boolean`     | false         | Attribute, which is set to true when navbar is open |
 | `scrolledTop`     | `boolean`     | true          | True, when window is scrolled to top             |

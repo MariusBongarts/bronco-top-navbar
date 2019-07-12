@@ -37,8 +37,7 @@ export class BroncoTopNavbar extends LitElement {
   isScrolling!: boolean;
 
   /**
-   * If true, either navbar is completely hidden, when hideOnMobile = true or
-   * only leftHeader and rightHeader are shown
+   * If true, either navbar is completely hidden, when hideOnMobile = true or only leftHeader and rightHeader are shown
    * @type {boolean}
    * @memberof BroncoTopNavbar
    */
