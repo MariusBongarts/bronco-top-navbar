@@ -34,6 +34,14 @@ export class BroncoTopNavbar extends LitElement {
   @property()
   hideOnScrolling = true;
 
+  /**
+   * Makes the navbar disappear, when window is not scrolled to the top
+   * @type {boolean}
+   * @memberof BroncoTopNavbar
+   */
+  @property()
+  hideOnNotTop = false;
+
   @property()
   isScrolling!: boolean;
 
@@ -85,10 +93,6 @@ export class BroncoTopNavbar extends LitElement {
   @property()
   title = 'Bronconents';
 
-
-
-
-
   firstUpdated() {
     if (window.innerWidth < 928) this.mobile = true;
     window.addEventListener('resize', () => {
@@ -125,7 +129,7 @@ export class BroncoTopNavbar extends LitElement {
   render() {
     return html`
     ${!this.mobile || !this.hideOnMobile ? html`
-    <div id="topBar" class="${this.scrolledTop || !this.hideOnScrolling ? 'show' : 'hide hideBar'}">
+    <div id="topBar" class="${(this.scrolledTop || !this.hideOnScrolling) || !this.hideOnNotTop ? 'show' : 'hide hideBar'}">
       <ul class="navbar">
         <li id="leftHeader">
           ${this.title}
