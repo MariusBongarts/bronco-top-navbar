@@ -1,7 +1,7 @@
 :host {
   --bg-color: #000;
   --color: white;
-  --height: 3em;
+  --height: 2.5em;
   --position: fixed;
   --primary-color: rgb(29, 202, 255);
   --width: 100vw;
@@ -56,8 +56,13 @@
 #leftHeader {
   color: var(--primary-color);
   font-weight: bold;
-  font-size: 150%;
+  font-size: 110%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#leftHeader > * {
+ width: 100px;
+ height: 100px;
 }
 
 #rightHeader {

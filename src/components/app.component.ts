@@ -5,7 +5,7 @@ const componentCSS = require('./app.component.scss');
 /**
  * Modern Top circular navbar built with Lit-Element
  * @event selected - Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event
- * @cssprop --bg-colorv - Background color of item, when not hovered or selected
+ * @cssprop --bg-color - Background color of item, when not hovered or selected
  * @cssprop --color - text color
  * @cssprop --height - Navbar height
  * @cssprop --position - Positioning of navBar. Default: fixed
@@ -132,7 +132,7 @@ export class BroncoTopNavbar extends LitElement {
     <div id="topBar" class="${(this.scrolledTop || !this.hideOnScrolling) || !this.hideOnNotTop ? 'show' : 'hide hideBar'}">
       <ul class="navbar">
         <li id="leftHeader">
-          ${this.title}
+          <slot name="leftHeader"></slot>
         </li>
         ${!this.mobile ? html` ${this.navItems.map(item => html`
         <li @click=${()=> this.emit(item)}

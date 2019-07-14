@@ -42,7 +42,7 @@ Modern Top circular navbar built with Lit-Element
 
 | Property          | Description                                      |
 |-------------------|--------------------------------------------------|
-| `--bg-colorv`     | Background color of item, when not hovered or selected |
+| `--bg-color`      | Background color of item, when not hovered or selected |
 | `--color`         | text color                                       |
 | `--height`        | Navbar height                                    |
 | `--position`      | Positioning of navBar. Default: fixed            |
