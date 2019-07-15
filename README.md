@@ -10,6 +10,19 @@
 </p>
 
 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#installation)
+
+## ➤ Installation
+
+```
+$ npm i https://github.com/marius2502/bronco-top-navbar.git
+```
+
+```javascript
+import '@marius/bronco-top-navbar/dist/main';
+```
+
+
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#bronco-top-navbar)
 
 ## ➤ bronco-top-navbar

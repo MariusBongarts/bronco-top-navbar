@@ -1,5 +1,6 @@
 {
   "name": "@marius/bronkotopnavbar",
+  "identifier": "bronco-top-navbar",
   "version": "1.0.0",
   "description": "Modern top navbar",
   "private": true,
