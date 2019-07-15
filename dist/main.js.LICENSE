@@ -1160,7 +1160,7 @@
 /**
  * Modern Top circular navbar built with Lit-Element
  * @event selected - Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event
- * @cssprop --bg-colorv - Background color of item, when not hovered or selected
+ * @cssprop --bg-color - Background color of item, when not hovered or selected
  * @cssprop --color - text color
  * @cssprop --height - Navbar height
  * @cssprop --position - Positioning of navBar. Default: fixed
@@ -1172,7 +1172,7 @@
 /**
      * Modern Top circular navbar built with Lit-Element
      * @event selected - Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event
-     * @cssprop --bg-colorv - Background color of item, when not hovered or selected
+     * @cssprop --bg-color - Background color of item, when not hovered or selected
      * @cssprop --color - text color
      * @cssprop --height - Navbar height
      * @cssprop --position - Positioning of navBar. Default: fixed
