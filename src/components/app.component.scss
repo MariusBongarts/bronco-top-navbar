@@ -9,6 +9,7 @@
 }
 
 #topBar {
+  background: var(--primary-color);
   left: 0;
   top: 0;
   position: var(--position);
@@ -18,7 +19,7 @@
 }
 
 .navbar {
-  background: var(--bg-color);
+  background: var(--primary-color);
   position: relative;
   margin: 0;
   padding: 0;
