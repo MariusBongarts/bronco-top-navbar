@@ -19,7 +19,7 @@ $ npm i https://github.com/marius2502/bronco-top-navbar.git
 ```
 
 ```javascript
-import '@marius/bronco-top-navbar/dist/main';
+import '@marius/bronkotopnavbar/dist/main';
 ```
 
 

@@ -13,7 +13,7 @@ $ npm i https://github.com/marius2502/{{ pkg.identifier }}.git
 ```
 
 ```javascript
-import '@marius/{{ pkg.identifier }}/dist/main';
+import '{{ pkg.name }}/dist/main';
 ```
 
 {{ doc:src/components/app.component.ts }}
