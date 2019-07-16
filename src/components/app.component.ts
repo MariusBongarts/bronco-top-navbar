@@ -7,6 +7,7 @@ const componentCSS = require('./app.component.scss');
  * @event selected - Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event
  * @cssprop --bg-color - Background color of item, when not hovered or selected
  * @cssprop --color - text color
+ * @cssprop --color-hover - text color of item when hovered
  * @cssprop --height - Navbar height
  * @cssprop --position - Positioning of navBar. Default: fixed
  * @cssprop --primary-color - Change primary color easily
