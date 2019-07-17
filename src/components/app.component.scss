@@ -9,7 +9,7 @@
   --height: 3em;
   --position: relative;
   --primary-color: rgb(29, 202, 255);
-  --width: 100%;
+  --width: 100vw;
   --z-index: 2;
 }
 
@@ -18,12 +18,11 @@
   left: 0;
   top: 0;
   position: var(--position);
-  width: var(--width);
+  max-width: var(--width);
   height: var(--height);
   z-index: var(--z-index);
   box-shadow: 0 8px 8px -8px rgba(128, 128, 128, 0.322);
 }
-
 
 #center {
   margin-left: auto;
@@ -39,7 +38,6 @@ ul {
   padding: 0;
   height: 100%;
 }
-
 
 li {
   align-items: center;
@@ -62,7 +60,6 @@ li:hover:not(#leftHeader):not(#rightHeader) {
   height: var(--height);
   border-radius: 10%;
 }
-
 
 .hide {
   opacity: 0;

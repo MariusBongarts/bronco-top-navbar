@@ -136,12 +136,15 @@ export class BroncoTopNavbar extends LitElement {
         <li>
           <slot name="left"></slot>
         </li>
+        ${!this.mobile ? html`
         <li id="center">
-          <input placeholder="Search components" /><i class="material-icons">search</i>
+          <bronco-searchbar></bronco-searchbar>
         </li>
+        ` : ''}
+
 
         ${!this.mobile ? html` ${this.navItems.map(item => html`
-        <li @click=${() => this.emit(item)}
+        <li @click=${()=> this.emit(item)}
           class=${this.selectedItem === item ? 'selected' : ''}>${item}</li>`)}` : ''}
 
         <li id="rightHeader">
