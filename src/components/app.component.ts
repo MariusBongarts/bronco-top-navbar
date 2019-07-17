@@ -60,7 +60,7 @@ export class BroncoTopNavbar extends LitElement {
    * @memberof AppRoot
    */
   @property()
-  navItems = ['Home', 'Components', 'Documentation', 'Get started'];
+  navItems = ['Get started', 'Components'];
 
   /**
    * Attribute, which is set to true when navbar is open
@@ -130,16 +130,22 @@ export class BroncoTopNavbar extends LitElement {
   render() {
     return html`
     ${!this.mobile || !this.hideOnMobile ? html`
-    <div id="topBar" class="${(this.scrolledTop || !this.hideOnScrolling) || !this.hideOnNotTop ? 'show' : 'hide hideBar'}">
-      <ul class="navbar">
-        <li id="leftHeader">
-          <slot name="leftHeader"></slot>
+    <div class="topBar ${(this.scrolledTop || !this.hideOnScrolling) || !this.hideOnNotTop ? 'show' : 'hide hideBar'}">
+
+      <ul>
+        <li>
+          <slot name="left"></slot>
         </li>
+        <li id="center">
+          <input placeholder="Search components" /><i class="material-icons">search</i>
+        </li>
+
         ${!this.mobile ? html` ${this.navItems.map(item => html`
-        <li @click=${()=> this.emit(item)}
-          class=${this.selectedItem === item ? 'active' : ''}>${item}</li>`)}` : ''}
+        <li @click=${() => this.emit(item)}
+          class=${this.selectedItem === item ? 'selected' : ''}>${item}</li>`)}` : ''}
+
         <li id="rightHeader">
-          <slot name="rightHeader"></slot>
+          <slot name="right"></slot>
         </li>
       </ul>
     </div>
